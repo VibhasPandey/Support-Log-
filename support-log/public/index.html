@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support log</title>
+<style>
+  :root {
+    --bg: #f4f6f8; --panel: #ffffff; --ink: #17212b; --muted: #5d6b79; --line: #d9e0e6;
+    --dev: #0e6b73; --support: #c9822b; --focus: #1a73e8; --bad: #b3372a; --good: #1f7a4d;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12171c; --panel: #1b222a; --ink: #e8edf1; --muted: #93a1ae; --line: #2c3742;
+            --dev: #43b3bd; --support: #e0a050; --focus: #6ea8fe; --bad: #ef8b7f; --good: #6fcf9b; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.5 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; }
+  main { max-width: 1020px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+  h1 { font-size: 22px; margin: 0; font-weight: 650; }
+  h2 { font-size: 16px; margin: 0 0 12px; font-weight: 650; }
+  nav button { background: none; border: 0; border-bottom: 2px solid transparent; padding: 6px 4px; margin-left: 16px;
+               font: inherit; color: var(--muted); cursor: pointer; }
+  nav button[aria-current="page"] { color: var(--ink); border-color: var(--dev); font-weight: 600; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin-bottom: 18px; }
+  .panel-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .panel-head h2 { margin: 0; }
+  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  input, select, button { font: inherit; color: inherit; }
+  input, select { width: 100%; padding: 8px 10px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; }
+  input[type=file] { padding: 6px; }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(12, 1fr); }
+  .c2 { grid-column: span 2; } .c3 { grid-column: span 3; } .c4 { grid-column: span 4; } .c6 { grid-column: span 6; } .c8 { grid-column: span 8; } .c12 { grid-column: span 12; }
+  @media (max-width: 720px) { .c2, .c3, .c4, .c6, .c8 { grid-column: span 12; } }
+  .actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+  .btn { padding: 8px 16px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); cursor: pointer; }
+  .btn:disabled { opacity: .5; cursor: not-allowed; }
+  .btn.primary { background: var(--dev); border-color: var(--dev); color: #fff; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .btn.primary { color: #08181a; } }
+  .btn.running { border-color: var(--support); color: var(--support); font-weight: 600; }
+  .msg { color: var(--muted); font-size: 13px; min-height: 1.4em; }
+  .msg.err { color: var(--bad); }
+  .filter { display: flex; align-items: center; gap: 8px; }
+  .filter label { margin: 0; }
+  .filter select { width: auto; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; font-size: 13px; color: var(--muted); }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  td.when { white-space: nowrap; color: var(--muted); }
+  td small { color: var(--muted); display: block; }
+  .table-wrap { overflow-x: auto; }
+  .del { background: none; border: 0; color: var(--muted); cursor: pointer; padding: 2px 6px; }
+  .del:hover { color: var(--bad); }
+  .empty { color: var(--muted); padding: 12px 0; }
+  .hint { color: var(--muted); font-size: 14px; margin: 0 0 12px; max-width: 70ch; }
+  /* report */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-bottom: 18px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  .stat b { display: block; font-size: 26px; font-weight: 650; line-height: 1.2; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  .week { height: 28px; border-radius: 6px; overflow: hidden; display: flex; background: var(--dev); margin: 10px 0 8px; }
+  .week i { display: block; background: var(--support); }
+  .legend { display: flex; gap: 18px; font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+  .legend em { font-style: normal; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
+  .row { display: grid; grid-template-columns: 220px 1fr 110px; gap: 10px; align-items: center; margin: 6px 0; }
+  @media (max-width: 720px) { .row { grid-template-columns: 120px 1fr 90px; } }
+  .track { background: var(--bg); border-radius: 4px; height: 14px; }
+  .fill { background: var(--support); height: 100%; border-radius: 4px; min-width: 2px; }
+  .row small { color: var(--muted); text-align: right; }
+  .days { display: flex; align-items: flex-end; gap: 3px; height: 150px; overflow-x: auto; padding-top: 18px; }
+  .day { flex: 1 0 14px; max-width: 34px; background: var(--support); border-radius: 3px 3px 0 0; position: relative; min-height: 2px; }
+  .day span { position: absolute; top: -17px; left: 0; right: 0; text-align: center; font-size: 11px; color: var(--muted); }
+  .range { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .range .filter { margin-right: 4px; }
+  /* import */
+  .result-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 14px 0; }
+  .result-stats div { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+  .result-stats b { display: block; font-size: 22px; }
+  .result-stats span { font-size: 13px; color: var(--muted); }
+  .notes { margin: 8px 0; padding-left: 20px; color: var(--muted); font-size: 14px; }
+  .notes .warn { color: var(--bad); }
+  .ok { color: var(--good); font-weight: 600; }
+  .hidden { display: none; }
+  @media print {
+    body { background: #fff; color: #000; } nav, .range, .no-print { display: none !important; }
+    .panel, .stat { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Support log</h1>
+    <nav class="no-print">
+      <button id="tab-log" aria-current="page">Log</button>
+      <button id="tab-report">Report</button>
+      <button id="tab-import">Import / export</button>
+    </nav>
+  </header>
+
+  <!-- LOG -->
+  <section id="view-log">
+    <div class="panel">
+      <h2>Log a request</h2>
+      <div class="grid">
+        <div class="c3"><label for="date">Date</label><input id="date" type="date"></div>
+        <div class="c6"><label for="task">Task</label>
+          <input id="task" list="tasks" maxlength="200" autocomplete="off" autofocus placeholder="e.g. Sales Order Guidance">
+          <datalist id="tasks"></datalist></div>
+        <div class="c3"><label for="module">Module</label><select id="module"></select></div>
+        <div class="c4"><label for="requestedBy">Requested by</label>
+          <input id="requestedBy" list="requesters" maxlength="100" autocomplete="off"><datalist id="requesters"></datalist></div>
+        <div class="c4"><label for="respondedBy">Responsed by</label>
+          <input id="respondedBy" list="responders" maxlength="100" autocomplete="off"><datalist id="responders"></datalist></div>
+        <div class="c4"><label for="mins">Duration (mins)</label><input id="mins" type="number" min="0" max="600" step="0.5" value="5"></div>
+        <div class="c12"><label for="remarks">Remarks</label><input id="remarks" maxlength="500" autocomplete="off"></div>
+      </div>
+      <div class="actions">
+        <button class="btn primary" id="save">Log request</button>
+        <button class="btn" id="timer" type="button">Start timer</button>
+        <span class="msg" id="msg" role="status"></span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Recent requests</h2>
+        <div class="filter"><label for="listWho">Show</label><select id="listWho"></select></div>
+      </div>
+      <div id="list" class="table-wrap"></div>
+    </div>
+  </section>
+
+  <!-- REPORT -->
+  <section id="view-report" class="hidden">
+    <div class="range panel no-print">
+      <div class="filter"><label for="days">Period</label>
+        <select id="days">
+          <option value="7">Last 7 days</option>
+          <option value="30" selected>Last 30 days</option>
+          <option value="90">Last 90 days</option>
+          <option value="180">Last 6 months</option>
+          <option value="3650">All time</option>
+        </select></div>
+      <div class="filter"><label for="repWho">Person</label><select id="repWho"></select></div>
+      <button class="btn" id="xlsx">Download Excel</button>
+      <button class="btn" id="print">Print / save as PDF</button>
+    </div>
+    <div id="report"></div>
+  </section>
+
+  <!-- IMPORT / EXPORT -->
+  <section id="view-import" class="hidden">
+    <div class="panel">
+      <h2>Upload your sheet</h2>
+      <p class="hint">Use the same columns as your IT_Support sheet: S No., Date, Task, Module, Requested By, Responsed By, Duration(mins), Remarks.
+        Every tab in the file is read. Rows are matched on Responsed By + S No., so uploading the same file again adds new rows and updates
+        changed ones without creating duplicates.</p>
+      <label for="file">Excel file (.xlsx)</label>
+      <input id="file" type="file" accept=".xlsx">
+      <div class="actions">
+        <button class="btn" id="check" disabled>Check file</button>
+        <button class="btn primary" id="doImport" disabled>Import</button>
+        <span class="msg" id="importMsg" role="status"></span>
+      </div>
+      <div id="importOut"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Download everything</h2>
+      <p class="hint">Gives you all saved entries in the same sheet format, one tab per person, ready to upload again later.</p>
+      <button class="btn" id="exportAll">Download Excel</button>
+    </div>
+  </section>
+</main>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+async function api(url, opts) {
+  const r = await fetch(url, opts);
+  const body = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(body.error || r.statusText);
+  return body;
+}
+const hrs = (m) => Math.round(m / 6) / 10 + ' h';
+const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+const store = (k, v) => { try { v === undefined ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} };
+const stored = (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+const fmtDate = (iso) => new Date(iso + 'T00:00:00').toLocaleDateString([], { day: 'numeric', month: 'short', year: 'numeric' });
+
+/* ---------- tabs ---------- */
+function show(view) {
+  for (const v of ['log', 'report', 'import']) {
+    $('#view-' + v).classList.toggle('hidden', v !== view);
+    $('#tab-' + v).setAttribute('aria-current', v === view ? 'page' : 'false');
+  }
+  if (view === 'report') loadReport();
+}
+['log', 'report', 'import'].forEach((v) => { $('#tab-' + v).onclick = () => show(v); });
+
+/* ---------- lookups ---------- */
+let meta = { responders: [], defaultResponder: '' };
+function fillWho(select, selected) {
+  select.innerHTML = '<option value="">Everyone</option>' + meta.responders.map((r) => `<option>${esc(r)}</option>`).join('');
+  select.value = selected && meta.responders.includes(selected) ? selected : '';
+}
+async function loadMeta() {
+  meta = await api('/api/meta');
+  $('#module').innerHTML = meta.modules.map((m) => `<option>${esc(m)}</option>`).join('');
+  $('#tasks').innerHTML = meta.tasks.map((t) => `<option value="${esc(t)}">`).join('');
+  $('#requesters').innerHTML = meta.requesters.map((r) => `<option value="${esc(r)}">`).join('');
+  $('#responders').innerHTML = meta.responders.map((r) => `<option value="${esc(r)}">`).join('');
+  const lastModule = stored('module');
+  if (lastModule && meta.modules.includes(lastModule)) $('#module').value = lastModule;
+  if (!$('#respondedBy').value) $('#respondedBy').value = stored('respondedBy') || meta.defaultResponder;
+  const mine = meta.responders.find((r) => r.toLowerCase() === (meta.defaultResponder || '').toLowerCase());
+  fillWho($('#listWho'), $('#listWho').value || stored('listWho') || mine);
+  fillWho($('#repWho'), $('#repWho').value || stored('repWho') || mine);
+}
+
+/* ---------- log ---------- */
+async function loadList() {
+  const who = $('#listWho').value;
+  const rows = await api('/api/entries?responder=' + encodeURIComponent(who));
+  if (!rows.length) { $('#list').innerHTML = '<div class="empty">Nothing logged yet. Add a request above, or upload your sheet on the Import / export tab.</div>'; return; }
+  $('#list').innerHTML = `<table><thead><tr><th>Date</th><th>Task</th><th>Module</th><th>Requested by</th><th class="num">Mins</th><th></th></tr></thead><tbody>` +
+    rows.map((r) => `<tr><td class="when">${esc(fmtDate(r.date))}</td>
+      <td>${esc(r.task)}${r.remarks ? `<small>${esc(r.remarks)}</small>` : ''}</td>
+      <td>${esc(r.module || '')}</td>
+      <td>${esc(r.requestedBy)}${who ? '' : `<small>${esc(r.respondedBy)}</small>`}</td>
+      <td class="num">${r.mins}</td>
+      <td><button class="del" data-id="${r.id}" title="Delete this entry" aria-label="Delete entry">&times;</button></td></tr>`).join('') +
+    '</tbody></table>';
+}
+$('#listWho').onchange = () => { store('listWho', $('#listWho').value); loadList(); };
+$('#list').addEventListener('click', async (e) => {
+  const id = e.target.dataset && e.target.dataset.id;
+  if (!id || !confirm('Delete this entry?')) return;
+  await api('/api/entries/' + id, { method: 'DELETE' });
+  loadList();
+});
+
+function setMsg(text, err) { const m = $('#msg'); m.textContent = text; m.className = 'msg' + (err ? ' err' : ''); }
+
+async function save() {
+  try {
+    await api('/api/entries', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        date: $('#date').value, task: $('#task').value, module: $('#module').value, requestedBy: $('#requestedBy').value,
+        respondedBy: $('#respondedBy').value, mins: $('#mins').value, remarks: $('#remarks').value,
+      }),
+    });
+    store('module', $('#module').value);
+    store('respondedBy', $('#respondedBy').value);
+    ['task', 'requestedBy', 'remarks'].forEach((id) => { $('#' + id).value = ''; });
+    $('#mins').value = 5;
+    $('#task').focus();
+    setMsg('Logged.');
+    setTimeout(() => setMsg(''), 2500);
+    await loadMeta();
+    loadList();
+  } catch (e) { setMsg(e.message, true); }
+}
+$('#save').onclick = save;
+['task', 'requestedBy', 'respondedBy', 'mins', 'remarks'].forEach((id) =>
+  $('#' + id).addEventListener('keydown', (e) => { if (e.key === 'Enter') save(); }));
+
+/* timer (survives a page reload) */
+let tick = null;
+function renderTimer() {
+  const start = parseInt(stored('timerStart') || '0', 10);
+  const btn = $('#timer');
+  if (!start) { btn.textContent = 'Start timer'; btn.classList.remove('running'); clearInterval(tick); tick = null; return; }
+  const s = Math.floor((Date.now() - start) / 1000);
+  btn.textContent = `Stop timer (${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')})`;
+  btn.classList.add('running');
+  if (!tick) tick = setInterval(renderTimer, 1000);
+}
+$('#timer').onclick = () => {
+  const start = parseInt(stored('timerStart') || '0', 10);
+  if (start) { $('#mins').value = Math.max(1, Math.round((Date.now() - start) / 60000)); store('timerStart', undefined); }
+  else store('timerStart', String(Date.now()));
+  renderTimer();
+};
+
+/* ---------- report ---------- */
+function bars(list, withHours = true) {
+  const max = Math.max(1, ...list.map((x) => x.n));
+  return list.map((x) => `<div class="row"><span>${esc(x.label)}</span>
+    <div class="track"><div class="fill" style="width:${(x.n / max) * 100}%"></div></div>
+    <small>${x.n} req${withHours ? ' · ' + hrs(x.minutes) : ''}</small></div>`).join('');
+}
+
+async function loadReport() {
+  const days = $('#days').value, who = $('#repWho').value;
+  const d = await api(`/api/report?days=${days}&responder=${encodeURIComponent(who)}`);
+  const t = d.totals;
+  if (!t.n) { $('#report').innerHTML = '<div class="panel empty">No requests in this period for this selection.</div>'; return; }
+
+  const topTask = d.topTasks[0];
+  const perDay = (t.n / Math.max(1, t.activeDays)).toFixed(1);
+  const cap = d.weekCapacityMinutes, wk = d.thisWeek;
+  const wkPct = Math.min(100, (wk.minutes / cap) * 100);
+  const dayMax = Math.max(1, ...d.byDay.map((x) => x.n));
+  const dayBars = d.byDay.map((x) =>
+    `<div class="day" style="height:${(x.n / dayMax) * 100}%" title="${x.day}: ${x.n} requests, ${x.minutes} min"><span>${x.n}</span></div>`).join('');
+
+  $('#report').innerHTML = `
+    <div class="stats">
+      <div class="stat"><b>${t.n}</b><span>requests handled</span></div>
+      <div class="stat"><b>${hrs(t.minutes)}</b><span>spent on support</span></div>
+      <div class="stat"><b>${perDay}</b><span>interruptions per working day</span></div>
+      <div class="stat"><b>${Math.round((topTask.n / t.n) * 100)}%</b><span>are "${esc(topTask.label)}"</span></div>
+    </div>
+
+    <div class="panel">
+      <h2>This week: ${hrs(wk.minutes)} of ${hrs(cap)} went to support</h2>
+      <div class="week" aria-hidden="true"><i style="width:${wkPct}%"></i></div>
+      <div class="legend"><span><em style="background:var(--support)"></em>Support (${wk.n} requests)</span>
+        <span><em style="background:var(--dev)"></em>Left for development</span></div>
+    </div>
+
+    <div class="panel"><h2>By type of request</h2>${bars(d.byType)}</div>
+    <div class="panel"><h2>Most repeated tasks</h2>${bars(d.topTasks)}</div>
+    <div class="panel"><h2>By module</h2>${bars(d.byModule)}</div>
+    <div class="panel"><h2>Requests per day</h2><div class="days">${dayBars}</div></div>
+
+    <div class="panel"><h2>Support hours per week</h2>
+      ${d.byWeek.map((w) => `<div class="row"><span>Week of ${esc(fmtDate(w.week))}</span>
+        <div class="track"><div class="fill" style="width:${Math.min(100, (w.minutes / cap) * 100)}%"></div></div>
+        <small>${hrs(w.minutes)}</small></div>`).join('')}
+    </div>
+
+    <div class="panel"><h2>Who asks most</h2>${bars(d.topRequesters)}</div>
+
+    ${d.repeats.length ? `<div class="panel"><h2>Same person, same type of request</h2>
+      <table><tbody>${d.repeats.map((r) => `<tr><td>${esc(r.requester)}</td><td>${esc(r.type)}</td><td class="num">${r.n} times</td></tr>`).join('')}</tbody></table></div>` : ''}`;
+}
+$('#days').onchange = loadReport;
+$('#repWho').onchange = () => { store('repWho', $('#repWho').value); loadReport(); };
+$('#xlsx').onclick = () => { location.href = `/api/export.xlsx?days=${$('#days').value}&responder=${encodeURIComponent($('#repWho').value)}`; };
+$('#print').onclick = () => window.print();
+
+/* ---------- import / export ---------- */
+let picked = null;
+const setImportMsg = (t, err) => { const m = $('#importMsg'); m.textContent = t; m.className = 'msg' + (err ? ' err' : ''); };
+
+$('#file').onchange = (e) => {
+  picked = e.target.files[0] || null;
+  $('#check').disabled = !picked;
+  $('#doImport').disabled = true;
+  $('#importOut').innerHTML = '';
+  setImportMsg('');
+};
+
+async function sendFile(commit) {
+  const r = await fetch('/api/import?commit=' + commit, { method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: picked });
+  const b = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(b.error || r.statusText);
+  return b;
+}
+
+function renderImport(s) {
+  const n = s.notes;
+  const lines = [];
+  if (s.sheetsSkipped.length) lines.push(`<li class="warn">Tabs ignored because the header row was not recognised: ${s.sheetsSkipped.map(esc).join(', ')}</li>`);
+  if (n.durationMissing) lines.push(`<li>${n.durationMissing} row(s) had no usable duration and count as 0 minutes.</li>`);
+  if (n.taskBlank) lines.push(`<li>${n.taskBlank} row(s) had no task and are saved as "(Not specified)".</li>`);
+  if (n.repeatedSNo) lines.push(`<li>${n.repeatedSNo} row(s) reuse an S No. that appears earlier in the same tab. They are kept as separate entries.</li>`);
+  const skipped = s.skipped.slice(0, 25).map((x) => `<li class="warn">Tab "${esc(x.sheet)}", row ${x.row}: ${esc(x.reason)}</li>`).join('');
+  const more = s.skipped.length > 25 ? `<li class="warn">…and ${s.skipped.length - 25} more skipped rows.</li>` : '';
+
+  $('#importOut').innerHTML = `
+    <h2 style="margin-top:18px">${s.committed ? '<span class="ok">Imported.</span>' : 'Ready to import'}</h2>
+    <p class="hint" style="margin:0">${s.firstDate ? `Dates in this file run from ${esc(fmtDate(s.firstDate))} to ${esc(fmtDate(s.lastDate))}.` : 'No usable rows found.'}</p>
+    <div class="result-stats">
+      <div><b>${s.inserted}</b><span>${s.committed ? 'new rows added' : 'new rows'}</span></div>
+      <div><b>${s.updated}</b><span>${s.committed ? 'rows updated' : 'rows that changed'}</span></div>
+      <div><b>${s.unchanged}</b><span>already up to date</span></div>
+      <div><b>${s.skipped.length}</b><span>skipped</span></div>
+    </div>
+    ${s.people.length ? `<table><thead><tr><th>Person</th><th class="num">Rows</th><th class="num">Time</th></tr></thead><tbody>${
+      s.people.map((p) => `<tr><td>${esc(p.name)}</td><td class="num">${p.rows}</td><td class="num">${hrs(p.mins)}</td></tr>`).join('')}</tbody></table>` : ''}
+    ${lines.length || skipped ? `<ul class="notes">${lines.join('')}${skipped}${more}</ul>` : ''}`;
+}
+
+$('#check').onclick = async () => {
+  try {
+    setImportMsg('Reading file…');
+    const s = await sendFile(0);
+    renderImport(s);
+    $('#doImport').disabled = !(s.inserted || s.updated);
+    setImportMsg(s.inserted || s.updated ? '' : 'Nothing new to import.');
+  } catch (e) { setImportMsg(e.message, true); }
+};
+
+$('#doImport').onclick = async () => {
+  try {
+    $('#doImport').disabled = true;
+    setImportMsg('Importing…');
+    const s = await sendFile(1);
+    renderImport(s);
+    setImportMsg('');
+    await loadMeta();
+    loadList();
+  } catch (e) { setImportMsg(e.message, true); $('#doImport').disabled = false; }
+};
+$('#exportAll').onclick = () => { location.href = '/api/export.xlsx'; };
+
+/* ---------- start ---------- */
+$('#date').value = today();
+renderTimer();
+loadMeta().then(loadList).catch((e) => setMsg(e.message, true));
+</script>
+</body>
+</html>

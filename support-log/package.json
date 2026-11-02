@@ -1,0 +1,19 @@
+{
+  "name": "support-log",
+  "version": "2.1.0",
+  "description": "Personal log of IT support work, backed by SQLite, with Excel import/export",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "reclassify": "node scripts/reclassify.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2"
+  }
+}
