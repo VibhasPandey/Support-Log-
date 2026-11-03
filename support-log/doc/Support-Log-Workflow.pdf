@@ -1,0 +1,326 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 11898 >>
+stream
+0 w 0.086 0.196 0.310 RG 0.086 0.196 0.310 rg 0 738 m 1190 738 l 1190 738 l 1190 842 l 1190 842 l 0 842 l 0 842 l 0 738 l h B
+BT /F2 10 Tf 0.620 0.847 0.847 rg 1 0 0 1 42 810 Tm (SUPPORT LOG  |  PROPOSED WORKFLOW) Tj ET
+BT /F2 25 Tf 1.000 1.000 1.000 rg 1 0 0 1 42 778 Tm (Request logging lifecycle) Tj ET
+BT /F1 11 Tf 0.843 0.882 0.914 rg 1 0 0 1 42 756 Tm (A local workflow for timing, recording, and reviewing support requests.) Tj ET
+BT /F2 13 Tf 0.620 0.847 0.847 rg 1 0 0 1 1118 798 Tm (01) Tj ET
+BT /F2 14 Tf 0.086 0.196 0.310 rg 1 0 0 1 42 705 Tm (01  Receive and start) Tj ET
+BT /F1 10 Tf 0.365 0.420 0.475 rg 1 0 0 1 42 687 Tm (Start the timer when you begin handling a request.) Tj ET
+1.5 w 0.224 0.451 0.675 RG 1.000 1.000 1.000 rg 53 510 m 159 510 l 170 521 l 170 654 l 159 665 l 53 665 l 42 654 l 42 521 l h B
+0 w 0.224 0.451 0.675 RG 0.224 0.451 0.675 rg 46 658 m 166 658 l 170 662 l 170 661 l 166 665 l 46 665 l 42 661 l 42 662 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 54 638 Tm (Request arrives) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 54 616 Tm (Call, message, email,) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 54 602 Tm (or in-person request.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 54 588 Tm (Open Support Log.) Tj ET
+1.5 w 0.055 0.420 0.451 RG 1.000 1.000 1.000 rg 199 510 m 305 510 l 316 521 l 316 654 l 305 665 l 199 665 l 188 654 l 188 521 l h B
+0 w 0.055 0.420 0.451 RG 0.055 0.420 0.451 rg 192 658 m 312 658 l 316 662 l 316 661 l 312 665 l 192 665 l 188 661 l 188 662 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 200 638 Tm (Start Request) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 200 616 Tm (Click Start Request.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 200 602 Tm (Timer starts at once.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 200 588 Tm (One active request.) Tj ET
+1.5 w 0.224 0.451 0.675 RG 1.000 1.000 1.000 rg 345 510 m 451 510 l 462 521 l 462 654 l 451 665 l 345 665 l 334 654 l 334 521 l h B
+0 w 0.224 0.451 0.675 RG 0.224 0.451 0.675 rg 338 658 m 458 658 l 462 662 l 462 661 l 458 665 l 338 665 l 334 661 l 334 662 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 346 638 Tm (Enter details) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 346 616 Tm (Date, task, requester,) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 346 602 Tm (responder, module,) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 346 588 Tm (and task type.) Tj ET
+1.5 w 0.439 0.337 0.659 RG 1.000 1.000 1.000 rg 491 510 m 597 510 l 608 521 l 608 654 l 597 665 l 491 665 l 480 654 l 480 521 l h B
+0 w 0.439 0.337 0.659 RG 0.439 0.337 0.659 rg 484 658 m 604 658 l 608 662 l 608 661 l 604 665 l 484 665 l 480 661 l 480 662 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 492 638 Tm (Choose type) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 492 616 Tm (Select from dropdown.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 492 602 Tm (If missing, add a type;) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 492 588 Tm (save to master file.) Tj ET
+1.5 w 0.788 0.510 0.169 RG 1.000 1.000 1.000 rg 637 510 m 743 510 l 754 521 l 754 654 l 743 665 l 637 665 l 626 654 l 626 521 l h B
+0 w 0.788 0.510 0.169 RG 0.788 0.510 0.169 rg 630 658 m 750 658 l 754 662 l 754 661 l 750 665 l 630 665 l 626 661 l 626 662 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 638 638 Tm (Add context) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 638 616 Tm (Optional remarks about) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 638 602 Tm (the request, plus private) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 638 588 Tm (reminder Notes.) Tj ET
+1.5 w 0.055 0.420 0.451 RG 1.000 1.000 1.000 rg 783 510 m 889 510 l 900 521 l 900 654 l 889 665 l 783 665 l 772 654 l 772 521 l h B
+0 w 0.055 0.420 0.451 RG 0.055 0.420 0.451 rg 776 658 m 896 658 l 900 662 l 900 661 l 896 665 l 776 665 l 772 661 l 772 662 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 784 638 Tm (End Request) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 784 616 Tm (Click End Request) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 784 602 Tm (when handling ends.) Tj ET
+1.5 w 0.157 0.478 0.333 RG 1.000 1.000 1.000 rg 929 510 m 1035 510 l 1046 521 l 1046 654 l 1035 665 l 929 665 l 918 654 l 918 521 l h B
+0 w 0.157 0.478 0.333 RG 0.157 0.478 0.333 rg 922 658 m 1042 658 l 1046 662 l 1046 661 l 1042 665 l 922 665 l 918 661 l 918 662 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 930 638 Tm (Time captured) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 930 616 Tm (Timer stops. Elapsed) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 930 602 Tm (minutes attach to this) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 930 588 Tm (request automatically.) Tj ET
+1.5 w 0.086 0.196 0.310 RG 1.000 1.000 1.000 rg 1075 510 m 1181 510 l 1192 521 l 1192 654 l 1181 665 l 1075 665 l 1064 654 l 1064 521 l h B
+0 w 0.086 0.196 0.310 RG 0.086 0.196 0.310 rg 1068 658 m 1188 658 l 1192 662 l 1192 661 l 1188 665 l 1068 665 l 1064 661 l 1064 662 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 1076 638 Tm (Validate and save) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 1076 616 Tm (Check required fields.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 1076 602 Tm (Save completed request) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 1076 588 Tm (to local SQLite.) Tj ET
+2 w 0.365 0.420 0.475 RG 172 587 m 184 587 l S
+0.365 0.420 0.475 rg 184 587 m 176.90404061776573 583.3057665956682 l 176.90404061776573 590.6942334043318 l h f
+2 w 0.365 0.420 0.475 RG 318 587 m 330 587 l S
+0.365 0.420 0.475 rg 330 587 m 322.9040406177657 583.3057665956682 l 322.9040406177657 590.6942334043318 l h f
+2 w 0.365 0.420 0.475 RG 464 587 m 476 587 l S
+0.365 0.420 0.475 rg 476 587 m 468.9040406177657 583.3057665956682 l 468.9040406177657 590.6942334043318 l h f
+2 w 0.365 0.420 0.475 RG 610 587 m 622 587 l S
+0.365 0.420 0.475 rg 622 587 m 614.9040406177658 583.3057665956682 l 614.9040406177658 590.6942334043318 l h f
+2 w 0.365 0.420 0.475 RG 756 587 m 768 587 l S
+0.365 0.420 0.475 rg 768 587 m 760.9040406177658 583.3057665956682 l 760.9040406177658 590.6942334043318 l h f
+2 w 0.365 0.420 0.475 RG 902 587 m 914 587 l S
+0.365 0.420 0.475 rg 914 587 m 906.9040406177658 583.3057665956682 l 906.9040406177658 590.6942334043318 l h f
+2 w 0.365 0.420 0.475 RG 1048 587 m 1060 587 l S
+0.365 0.420 0.475 rg 1060 587 m 1052.9040406177658 583.3057665956682 l 1052.9040406177658 590.6942334043318 l h f
+0 w 0.224 0.451 0.675 RG 0.224 0.451 0.675 rg 52 466 m 130 466 l 140 476 l 140 478 l 130 488 l 52 488 l 42 478 l 42 476 l h B
+BT /F2 9 Tf 1.000 1.000 1.000 rg 1 0 0 1 52 473 Tm (REQUEST DATA) Tj ET
+BT /F2 14 Tf 0.086 0.196 0.310 rg 1 0 0 1 42 437 Tm (02  If information is incomplete) Tj ET
+BT /F1 10 Tf 0.365 0.420 0.475 rg 1 0 0 1 42 419 Tm (Keep the entered details and captured duration so the request can be corrected.) Tj ET
+1.5 w 0.682 0.290 0.263 RG 1.000 1.000 1.000 rg 53 281 m 301 281 l 312 292 l 312 386 l 301 397 l 53 397 l 42 386 l 42 292 l h B
+0 w 0.682 0.290 0.263 RG 0.682 0.290 0.263 rg 46 390 m 308 390 l 312 394 l 312 393 l 308 397 l 46 397 l 42 393 l 42 394 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 54 370 Tm (Correction path) Tj ET
+BT /F2 9 Tf 0.682 0.290 0.263 rg 1 0 0 1 54 352 Tm (VALIDATION) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 54 333 Tm (Missing required details? Complete them,) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 54 319 Tm (then save the same request.) Tj ET
+1.5 w 0.439 0.337 0.659 RG 1.000 1.000 1.000 rg 465 281 m 725 281 l 736 292 l 736 386 l 725 397 l 465 397 l 454 386 l 454 292 l h B
+0 w 0.439 0.337 0.659 RG 0.439 0.337 0.659 rg 458 390 m 732 390 l 736 394 l 736 393 l 732 397 l 458 397 l 454 393 l 454 394 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 466 370 Tm (Task Type master file) Tj ET
+BT /F2 9 Tf 0.439 0.337 0.659 rg 1 0 0 1 466 352 Tm (LOCAL REFERENCE) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 466 333 Tm (Stores the allowed task type names.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 466 319 Tm (New types become available in the dropdown.) Tj ET
+1.5 w 0.788 0.510 0.169 RG 1.000 1.000 1.000 rg 889 281 m 1137 281 l 1148 292 l 1148 386 l 1137 397 l 889 397 l 878 386 l 878 292 l h B
+0 w 0.788 0.510 0.169 RG 0.788 0.510 0.169 rg 882 390 m 1144 390 l 1148 394 l 1148 393 l 1144 397 l 882 397 l 878 393 l 878 394 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 890 370 Tm (Per-request Notes) Tj ET
+BT /F2 9 Tf 0.788 0.510 0.169 rg 1 0 0 1 890 352 Tm (OPTIONAL) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 890 333 Tm (Personal reminders linked to the request.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 890 319 Tm (Use for follow-up or talking points.) Tj ET
+2 w 0.439 0.337 0.659 RG 544 510 m 544 457 l 595 457 l 595 397 l S
+0.439 0.337 0.659 rg 595 397 m 591.3057665956682 404.0959593822343 l 598.6942334043318 404.0959593822343 l h f
+2 w 0.788 0.510 0.169 RG 690 510 m 690 452 l 1013 452 l 1013 397 l S
+0.788 0.510 0.169 rg 1013 397 m 1009.3057665956682 404.0959593822343 l 1016.6942334043318 404.0959593822343 l h f
+2 w 0.682 0.290 0.263 RG 1128 510 m 1128 456 l 177 456 l 177 397 l S
+0.682 0.290 0.263 rg 177 397 m 173.30576659566813 404.0959593822343 l 180.69423340433187 404.0959593822343 l h f
+0 w 0.157 0.478 0.333 RG 0.157 0.478 0.333 rg 52 224 m 117 224 l 127 234 l 127 236 l 117 246 l 52 246 l 42 236 l 42 234 l h B
+BT /F2 9 Tf 1.000 1.000 1.000 rg 1 0 0 1 52 231 Tm (AFTER SAVE) Tj ET
+1.5 w 0.157 0.478 0.333 RG 1.000 1.000 1.000 rg 53 84 m 361 84 l 372 95 l 372 199 l 361 210 l 53 210 l 42 199 l 42 95 l h B
+0 w 0.157 0.478 0.333 RG 0.157 0.478 0.333 rg 46 203 m 368 203 l 372 207 l 372 206 l 368 210 l 46 210 l 42 206 l 42 207 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 54 183 Tm (Recent Requests) Tj ET
+BT /F2 9 Tf 0.157 0.478 0.333 rg 1 0 0 1 54 165 Tm (RECORD REVIEW) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 54 146 Tm (Review recent entries, filter by responder,) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 54 132 Tm (and delete an incorrect entry.) Tj ET
+1.5 w 0.224 0.451 0.675 RG 1.000 1.000 1.000 rg 441 84 m 749 84 l 760 95 l 760 199 l 749 210 l 441 210 l 430 199 l 430 95 l h B
+0 w 0.224 0.451 0.675 RG 0.224 0.451 0.675 rg 434 203 m 756 203 l 760 207 l 760 206 l 756 210 l 434 210 l 430 206 l 430 207 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 442 183 Tm (Reports) Tj ET
+BT /F2 9 Tf 0.224 0.451 0.675 rg 1 0 0 1 442 165 Tm (SUMMARY) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 442 146 Tm (Choose period and responder; see time,) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 442 132 Tm (request counts, task types, modules,) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 442 118 Tm (daily and weekly trends, repeat tasks.) Tj ET
+1.5 w 0.086 0.196 0.310 RG 1.000 1.000 1.000 rg 829 84 m 1137 84 l 1148 95 l 1148 199 l 1137 210 l 829 210 l 818 199 l 818 95 l h B
+0 w 0.086 0.196 0.310 RG 0.086 0.196 0.310 rg 822 203 m 1144 203 l 1148 207 l 1148 206 l 1144 210 l 822 210 l 818 206 l 818 207 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 830 183 Tm (Take-away) Tj ET
+BT /F2 9 Tf 0.086 0.196 0.310 rg 1 0 0 1 830 165 Tm (OUTPUT) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 830 146 Tm (Print or save a report as PDF, or export) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 830 132 Tm (the records to Excel for your own review.) Tj ET
+2 w 0.365 0.420 0.475 RG 372 147 m 430 147 l S
+0.365 0.420 0.475 rg 430 147 m 422.9040406177657 143.30576659566816 l 422.9040406177657 150.69423340433184 l h f
+2 w 0.365 0.420 0.475 RG 760 147 m 818 147 l S
+0.365 0.420 0.475 rg 818 147 m 810.9040406177658 143.30576659566816 l 810.9040406177658 150.69423340433184 l h f
+0.8 w 0.812 0.851 0.882 RG 40 34 m 1150 34 l S
+BT /F1 9 Tf 0.365 0.420 0.475 rg 1 0 0 1 42 15 Tm (Timer measures elapsed handling time between Start Request and End Request.) Tj ET
+BT /F2 8 Tf 0.365 0.420 0.475 rg 1 0 0 1 990 15 Tm (LOCAL PERSONAL WORKFLOW  |  CONCEPT) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1190 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 7953 >>
+stream
+0 w 0.086 0.196 0.310 RG 0.086 0.196 0.310 rg 0 738 m 1190 738 l 1190 738 l 1190 842 l 1190 842 l 0 842 l 0 842 l 0 738 l h B
+BT /F2 10 Tf 0.620 0.847 0.847 rg 1 0 0 1 42 810 Tm (SUPPORT LOG  |  DATA AND SUPPORTING WORKFLOWS) Tj ET
+BT /F2 25 Tf 1.000 1.000 1.000 rg 1 0 0 1 42 778 Tm (Where records go, and how they are used) Tj ET
+BT /F1 11 Tf 0.843 0.882 0.914 rg 1 0 0 1 42 756 Tm (The app stays local: browser interface, local server, SQLite records, and Excel exchange.) Tj ET
+BT /F2 13 Tf 0.620 0.847 0.847 rg 1 0 0 1 1118 798 Tm (02) Tj ET
+BT /F2 14 Tf 0.086 0.196 0.310 rg 1 0 0 1 42 705 Tm (01  Application blocks) Tj ET
+BT /F1 10 Tf 0.365 0.420 0.475 rg 1 0 0 1 42 687 Tm (Local app components and the information that flows between them.) Tj ET
+1.5 w 0.224 0.451 0.675 RG 1.000 1.000 1.000 rg 59 548 m 282 548 l 293 559 l 293 653 l 282 664 l 59 664 l 48 653 l 48 559 l h B
+0 w 0.224 0.451 0.675 RG 0.224 0.451 0.675 rg 52 657 m 289 657 l 293 661 l 293 660 l 289 664 l 52 664 l 48 660 l 48 661 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 60 637 Tm (Browser interface) Tj ET
+BT /F2 9 Tf 0.224 0.451 0.675 rg 1 0 0 1 60 619 Tm (LOCAL WEB PAGE) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 60 600 Tm (Log requests, select type, add Notes,) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 60 586 Tm (review recent entries and reports.) Tj ET
+1.5 w 0.055 0.420 0.451 RG 1.000 1.000 1.000 rg 484 548 m 707 548 l 718 559 l 718 653 l 707 664 l 484 664 l 473 653 l 473 559 l h B
+0 w 0.055 0.420 0.451 RG 0.055 0.420 0.451 rg 477 657 m 714 657 l 718 661 l 718 660 l 714 664 l 477 664 l 473 660 l 473 661 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 485 637 Tm (Local server) Tj ET
+BT /F2 9 Tf 0.055 0.420 0.451 rg 1 0 0 1 485 619 Tm (EXPRESS) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 485 600 Tm (Validates fields, calculates elapsed) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 485 586 Tm (minutes, imports and exports workbooks.) Tj ET
+1.5 w 0.086 0.196 0.310 RG 1.000 1.000 1.000 rg 909 548 m 1132 548 l 1143 559 l 1143 653 l 1132 664 l 909 664 l 898 653 l 898 559 l h B
+0 w 0.086 0.196 0.310 RG 0.086 0.196 0.310 rg 902 657 m 1139 657 l 1143 661 l 1143 660 l 1139 664 l 902 664 l 898 660 l 898 661 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 910 637 Tm (SQLite database) Tj ET
+BT /F2 9 Tf 0.086 0.196 0.310 rg 1 0 0 1 910 619 Tm (LOCAL FILE) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 910 600 Tm (Stores requests, durations, remarks,) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 910 586 Tm (task types, and per-request Notes.) Tj ET
+2 w 0.365 0.420 0.475 RG 293 607 m 473 607 l S
+0.365 0.420 0.475 rg 473 607 m 465.9040406177657 603.3057665956682 l 465.9040406177657 610.6942334043318 l h f
+2 w 0.365 0.420 0.475 RG 718 607 m 898 607 l S
+0.365 0.420 0.475 rg 898 607 m 890.9040406177658 603.3057665956682 l 890.9040406177658 610.6942334043318 l h f
+BT /F1 9 Tf 0.365 0.420 0.475 rg 1 0 0 1 332 622 Tm (form / actions) Tj ET
+BT /F1 9 Tf 0.365 0.420 0.475 rg 1 0 0 1 752 622 Tm (save / query) Tj ET
+1.5 w 0.439 0.337 0.659 RG 1.000 1.000 1.000 rg 484 431 m 707 431 l 718 442 l 718 512 l 707 523 l 484 523 l 473 512 l 473 442 l h B
+0 w 0.439 0.337 0.659 RG 0.439 0.337 0.659 rg 477 516 m 714 516 l 718 520 l 718 519 l 714 523 l 477 523 l 473 519 l 473 520 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 485 496 Tm (Task Type master file) Tj ET
+BT /F2 9 Tf 0.439 0.337 0.659 rg 1 0 0 1 485 478 Tm (LOCAL REFERENCE) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 485 459 Tm (Dropdown values; add a new type) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 485 445 Tm (when needed.) Tj ET
+2 w 0.439 0.337 0.659 RG 595 523 m 595 548 l S
+0.439 0.337 0.659 rg 595 548 m 598.6942334043318 540.9040406177658 l 591.3057665956682 540.9040406177658 l h f
+BT /F1 9 Tf 0.439 0.337 0.659 rg 1 0 0 1 615 532 Tm (read / update) Tj ET
+0 w 0.224 0.451 0.675 RG 0.224 0.451 0.675 rg 52 376 m 123.5 376 l 133.5 386 l 133.5 388 l 123.5 398 l 52 398 l 42 388 l 42 386 l h B
+BT /F2 9 Tf 1.000 1.000 1.000 rg 1 0 0 1 52 383 Tm (02  REPORTS) Tj ET
+1.5 w 0.224 0.451 0.675 RG 1.000 1.000 1.000 rg 59 206 m 369 206 l 380 217 l 380 350 l 369 361 l 59 361 l 48 350 l 48 217 l h B
+0 w 0.224 0.451 0.675 RG 0.224 0.451 0.675 rg 52 354 m 376 354 l 380 358 l 380 357 l 376 361 l 52 361 l 48 357 l 48 358 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 60 334 Tm (Choose report view) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 60 312 Tm (Filter by time period and responder.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 60 298 Tm (Review requests and support minutes by) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 60 284 Tm (type, module, task, requester, day, and week.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 60 270 Tm (Print or save report as PDF.) Tj ET
+1.5 w 0.788 0.510 0.169 RG 1.000 1.000 1.000 rg 440 206 m 750 206 l 761 217 l 761 350 l 750 361 l 440 361 l 429 350 l 429 217 l h B
+0 w 0.788 0.510 0.169 RG 0.788 0.510 0.169 rg 433 354 m 757 354 l 761 358 l 761 357 l 757 361 l 433 361 l 429 357 l 429 358 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 441 334 Tm (Excel import) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 441 312 Tm (Select workbook; check recognized tabs) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 441 298 Tm (and rows; review new, changed, unchanged,) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 441 284 Tm (skipped, and missing-field notes; commit) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 441 270 Tm (to add or update records.) Tj ET
+1.5 w 0.157 0.478 0.333 RG 1.000 1.000 1.000 rg 821 206 m 1131 206 l 1142 217 l 1142 350 l 1131 361 l 821 361 l 810 350 l 810 217 l h B
+0 w 0.157 0.478 0.333 RG 0.157 0.478 0.333 rg 814 354 m 1138 354 l 1142 358 l 1142 357 l 1138 361 l 814 361 l 810 357 l 810 358 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 822 334 Tm (Excel export) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 822 312 Tm (Download all records or the selected) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 822 298 Tm (report scope for review or backup.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 822 284 Tm (Proposed export adds Task Type and Notes) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 822 270 Tm (columns to preserve those fields.) Tj ET
+2 w 0.224 0.451 0.675 RG 1020 548 m 1020 428 l 214 428 l 214 361 l S
+0.224 0.451 0.675 rg 214 361 m 210.30576659566813 368.0959593822343 l 217.69423340433187 368.0959593822343 l h f
+2 w 0.788 0.510 0.169 RG 1020 548 m 1020 423 l 595 423 l 595 361 l S
+0.788 0.510 0.169 rg 595 361 m 591.3057665956682 368.0959593822343 l 598.6942334043318 368.0959593822343 l h f
+2 w 0.157 0.478 0.333 RG 1020 548 m 1020 361 l S
+0.157 0.478 0.333 rg 1020 361 m 1016.3057665956682 368.0959593822343 l 1023.6942334043318 368.0959593822343 l h f
+BT /F2 14 Tf 0.086 0.196 0.310 rg 1 0 0 1 42 154 Tm (Import handling) Tj ET
+BT /F1 10 Tf 0.365 0.420 0.475 rg 1 0 0 1 42 136 Tm (Existing spreadsheet rows can omit the new Task Type and Notes columns.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 42 120 Tm (If Task Type is missing or does not match the master file, resolve it during import preview \(or assign a defined fallback\) before committing.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 42 95 Tm (Notes are optional and remain attached to each request. Proposed Excel export includes both Task Type and Notes for round-trip continuity.) Tj ET
+0.8 w 0.812 0.851 0.882 RG 0.949 0.965 0.973 rg 48 49 m 1136 49 l 1142 55 l 1142 67 l 1136 73 l 48 73 l 42 67 l 42 55 l h B
+BT /F2 9 Tf 0.086 0.196 0.310 rg 1 0 0 1 54 57 Tm (Design choice to confirm in implementation: how imported rows with no valid Task Type should be handled.) Tj ET
+0.8 w 0.812 0.851 0.882 RG 40 34 m 1150 34 l S
+BT /F1 9 Tf 0.365 0.420 0.475 rg 1 0 0 1 42 15 Tm (All saved data and the Task Type master file are intended to remain on your computer.) Tj ET
+BT /F2 8 Tf 0.365 0.420 0.475 rg 1 0 0 1 990 15 Tm (LOCAL PERSONAL WORKFLOW  |  CONCEPT) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1190 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 6899 >>
+stream
+0 w 0.086 0.196 0.310 RG 0.086 0.196 0.310 rg 0 738 m 1190 738 l 1190 738 l 1190 842 l 1190 842 l 0 842 l 0 842 l 0 738 l h B
+BT /F2 10 Tf 0.620 0.847 0.847 rg 1 0 0 1 42 810 Tm (SUPPORT LOG  |  FUTURE SCOPE) Tj ET
+BT /F2 25 Tf 1.000 1.000 1.000 rg 1 0 0 1 42 778 Tm (Master lists and department reporting) Tj ET
+BT /F1 11 Tf 0.843 0.882 0.914 rg 1 0 0 1 42 756 Tm (Optional extension: manage modules and responders centrally, then summarize IT support load.) Tj ET
+BT /F2 13 Tf 0.620 0.847 0.847 rg 1 0 0 1 1118 798 Tm (03) Tj ET
+BT /F2 14 Tf 0.086 0.196 0.310 rg 1 0 0 1 42 705 Tm (01  Master data for request entry) Tj ET
+BT /F1 10 Tf 0.365 0.420 0.475 rg 1 0 0 1 42 686 Tm (Add a new value from the corresponding dropdown; save it to its master for future requests.) Tj ET
+1.5 w 0.224 0.451 0.675 RG 1.000 1.000 1.000 rg 59 509 m 357 509 l 368 520 l 368 641 l 357 652 l 59 652 l 48 641 l 48 520 l h B
+0 w 0.224 0.451 0.675 RG 0.224 0.451 0.675 rg 52 645 m 364 645 l 368 649 l 368 648 l 364 652 l 52 652 l 48 648 l 48 649 l h B
+BT /F2 15 Tf 0.086 0.196 0.310 rg 1 0 0 1 62 623 Tm (Module Master) Tj ET
+BT /F2 9 Tf 0.224 0.451 0.675 rg 1 0 0 1 62 604 Tm (OPTIONAL LOCAL MASTER) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 62 583 Tm (Dropdown values such as CRM, HRMS, Infra.) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 62 567 Tm (Add Module saves a new value to the master.) Tj ET
+1.5 w 0.439 0.337 0.659 RG 1.000 1.000 1.000 rg 446 509 m 744 509 l 755 520 l 755 641 l 744 652 l 446 652 l 435 641 l 435 520 l h B
+0 w 0.439 0.337 0.659 RG 0.439 0.337 0.659 rg 439 645 m 751 645 l 755 649 l 755 648 l 751 652 l 439 652 l 435 648 l 435 649 l h B
+BT /F2 15 Tf 0.086 0.196 0.310 rg 1 0 0 1 449 623 Tm (Responded By Master) Tj ET
+BT /F2 9 Tf 0.439 0.337 0.659 rg 1 0 0 1 449 604 Tm (OPTIONAL LOCAL MASTER) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 449 583 Tm (Each responder has a name and Department.) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 449 567 Tm (Add Responder saves both for future use.) Tj ET
+1.5 w 0.055 0.420 0.451 RG 1.000 1.000 1.000 rg 833 509 m 1131 509 l 1142 520 l 1142 641 l 1131 652 l 833 652 l 822 641 l 822 520 l h B
+0 w 0.055 0.420 0.451 RG 0.055 0.420 0.451 rg 826 645 m 1138 645 l 1142 649 l 1142 648 l 1138 652 l 826 652 l 822 648 l 822 649 l h B
+BT /F2 15 Tf 0.086 0.196 0.310 rg 1 0 0 1 836 623 Tm (Request form) Tj ET
+BT /F2 9 Tf 0.055 0.420 0.451 rg 1 0 0 1 836 604 Tm (LOGGING EXTENSION) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 836 583 Tm (Choose Module and Responded By from) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 836 567 Tm (the masters; keep the selected values on) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 836 551 Tm (the saved request record.) Tj ET
+2 w 0.224 0.451 0.675 RG 368 581 m 435 581 l S
+0.224 0.451 0.675 rg 435 581 m 427.9040406177657 577.3057665956682 l 427.9040406177657 584.6942334043318 l h f
+2 w 0.439 0.337 0.659 RG 755 581 m 822 581 l S
+0.439 0.337 0.659 rg 822 581 m 814.9040406177658 577.3057665956682 l 814.9040406177658 584.6942334043318 l h f
+BT /F1 9 Tf 0.224 0.451 0.675 rg 1 0 0 1 380 594 Tm (catalog) Tj ET
+BT /F1 9 Tf 0.439 0.337 0.659 rg 1 0 0 1 766 594 Tm (catalog) Tj ET
+BT /F2 14 Tf 0.086 0.196 0.310 rg 1 0 0 1 42 457 Tm (02  Separate reporting views) Tj ET
+BT /F1 10 Tf 0.365 0.420 0.475 rg 1 0 0 1 42 438 Tm (Keep the personal responder view available; add an optional department-wide IT view.) Tj ET
+1.5 w 0.086 0.196 0.310 RG 1.000 1.000 1.000 rg 59 241 m 357 241 l 368 252 l 368 388 l 357 399 l 59 399 l 48 388 l 48 252 l h B
+0 w 0.086 0.196 0.310 RG 0.086 0.196 0.310 rg 52 392 m 364 392 l 368 396 l 368 395 l 364 399 l 52 399 l 48 395 l 48 396 l h B
+BT /F2 15 Tf 0.086 0.196 0.310 rg 1 0 0 1 62 370 Tm (Saved support requests) Tj ET
+BT /F2 9 Tf 0.086 0.196 0.310 rg 1 0 0 1 62 351 Tm (LOCAL RECORDS) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 62 330 Tm (Each entry retains its module and responder.) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 62 314 Tm (Responder department comes from the master.) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 62 298 Tm (These fields support filtered summaries.) Tj ET
+1.5 w 0.224 0.451 0.675 RG 1.000 1.000 1.000 rg 446 241 m 744 241 l 755 252 l 755 388 l 744 399 l 446 399 l 435 388 l 435 252 l h B
+0 w 0.224 0.451 0.675 RG 0.224 0.451 0.675 rg 439 392 m 751 392 l 755 396 l 755 395 l 751 399 l 439 399 l 435 395 l 435 396 l h B
+BT /F2 15 Tf 0.086 0.196 0.310 rg 1 0 0 1 449 370 Tm (Personal report) Tj ET
+BT /F2 9 Tf 0.224 0.451 0.675 rg 1 0 0 1 449 351 Tm (EXISTING REPORT + FILTER) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 449 330 Tm (Responder toggle selects one person or all.) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 449 314 Tm (Show that responder's support time, request) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 449 298 Tm (count, module mix, and trends.) Tj ET
+1.5 w 0.157 0.478 0.333 RG 1.000 1.000 1.000 rg 833 241 m 1131 241 l 1142 252 l 1142 388 l 1131 399 l 833 399 l 822 388 l 822 252 l h B
+0 w 0.157 0.478 0.333 RG 0.157 0.478 0.333 rg 826 392 m 1138 392 l 1142 396 l 1142 395 l 1138 399 l 826 399 l 822 395 l 822 396 l h B
+BT /F2 15 Tf 0.086 0.196 0.310 rg 1 0 0 1 836 370 Tm (IT department report) Tj ET
+BT /F2 9 Tf 0.157 0.478 0.333 rg 1 0 0 1 836 351 Tm (FUTURE OPTIONAL REPORT) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 836 330 Tm (Optional department view aggregates requests) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 836 314 Tm (and minutes for responders assigned to IT.) Tj ET
+BT /F1 11 Tf 0.114 0.169 0.227 rg 1 0 0 1 836 298 Tm (Summarize by period, module, and task type.) Tj ET
+2 w 0.224 0.451 0.675 RG 368 320 m 435 320 l S
+0.224 0.451 0.675 rg 435 320 m 427.9040406177657 316.30576659566816 l 427.9040406177657 323.69423340433184 l h f
+2 w 0.157 0.478 0.333 RG 368 282 m 822 282 l S
+0.157 0.478 0.333 rg 822 282 m 814.9040406177658 278.30576659566816 l 814.9040406177658 285.69423340433184 l h f
+BT /F1 9 Tf 0.224 0.451 0.675 rg 1 0 0 1 381 332 Tm (filter by responder) Tj ET
+BT /F1 9 Tf 0.157 0.478 0.333 rg 1 0 0 1 575 264 Tm (department = IT) Tj ET
+1 w 0.812 0.851 0.882 RG 0.949 0.965 0.973 rg 58 95 m 1132 95 l 1142 105 l 1142 194 l 1132 204 l 58 204 l 48 194 l 48 105 l h B
+BT /F2 13 Tf 0.086 0.196 0.310 rg 1 0 0 1 67 175 Tm (Scope boundary) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 67 151 Tm (This page is a future-scope proposal. The current personal logging and report workflow remains the primary use.) Tj ET
+BT /F1 10 Tf 0.114 0.169 0.227 rg 1 0 0 1 67 133 Tm (Department totals depend on maintaining the responder-to-department mapping; this view is optional and separate.) Tj ET
+0.8 w 0.812 0.851 0.882 RG 40 34 m 1150 34 l S
+BT /F1 9 Tf 0.365 0.420 0.475 rg 1 0 0 1 42 15 Tm (Future scope only  |  Master lists and department-level summary) Tj ET
+BT /F2 8 Tf 0.365 0.420 0.475 rg 1 0 0 1 990 15 Tm (LOCAL PERSONAL WORKFLOW  |  CONCEPT) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1190 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000134 00000 n 
+0000000204 00000 n 
+0000000279 00000 n 
+0000012230 00000 n 
+0000012367 00000 n 
+0000020372 00000 n 
+0000020509 00000 n 
+0000027460 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+27598
+%%EOF
